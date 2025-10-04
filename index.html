@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA High-Resolution Image Viewer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="openseadragon/openseadragon.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>NASA High-Resolution Image Viewer</h1>
+        <p>Explore NASA's stunning high-resolution images with deep zoom capabilities</p>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>Image Gallery</h2>
+            <div class="image-list">
+                <button class="image-item active" data-image="hubble-deep-field">
+                    <img src="images/thumb-hubble-deep-field.jpg" alt="Hubble Deep Field">
+                    <span>Hubble Ultra Deep Field</span>
+                </button>
+                <button class="image-item" data-image="pillars-of-creation">
+                    <img src="images/thumb-pillars-of-creation.jpg" alt="Pillars of Creation">
+                    <span>Pillars of Creation</span>
+                </button>
+                <button class="image-item" data-image="earth-blue-marble">
+                    <img src="images/thumb-earth-blue-marble.jpg" alt="Blue Marble">
+                    <span>Blue Marble (Earth)</span>
+                </button>
+                <button class="image-item" data-image="carina-nebula">
+                    <img src="images/thumb-carina-nebula.jpg" alt="Carina Nebula">
+                    <span>Carina Nebula</span>
+                </button>
+            </div>
+            
+            <div class="info">
+                <h3>Controls</h3>
+                <ul>
+                    <li><strong>Zoom:</strong> Mouse wheel or pinch on mobile</li>
+                    <li><strong>Pan:</strong> Click and drag</li>
+                    <li><strong>Home:</strong> Double-click or use home button</li>
+                    <li><strong>Full Screen:</strong> Click the fullscreen button</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="viewer-container">
+            <div id="openseadragon-viewer"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
